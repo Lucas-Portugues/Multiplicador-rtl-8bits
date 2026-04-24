@@ -1,0 +1,197 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2021  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+# Date created = 22:59:46  March 06, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Multiplicador_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY MultiplicadorF
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:59:46  MARCH 06, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name BDF_FILE Mux2X1.bdf
+set_global_assignment -name BDF_FILE Mux16X8.bdf
+set_global_assignment -name BDF_FILE Constante.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name BDF_FILE Mux32X16.bdf
+set_global_assignment -name BDF_FILE ExtensordeSinal.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name BDF_FILE UmShiftaEsquerda.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
+set_global_assignment -name BDF_FILE UmShiftaDireita.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform9.vwf
+set_global_assignment -name BDF_FILE MeioComparadordMag.bdf
+set_global_assignment -name BDF_FILE ComparadordMag1BComp.bdf
+set_global_assignment -name BDF_FILE SomadorCompleto.bdf
+set_global_assignment -name BDF_FILE MeioSomador.bdf
+set_global_assignment -name BDF_FILE Somador4B.bdf
+set_global_assignment -name BDF_FILE ComparadordMag4B.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform11.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform12.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform13.vwf
+set_global_assignment -name BDF_FILE Somador16B.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform14.vwf
+set_global_assignment -name BDF_FILE Registrador16B.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform15.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform16.vwf
+set_global_assignment -name BDF_FILE CircuitodeA.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform17.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform18.vwf
+set_global_assignment -name BDF_FILE Registrador8Bit.bdf
+set_global_assignment -name BDF_FILE CircuitodeB.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform19.vwf
+set_global_assignment -name BDF_FILE SelecaodSoma.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform20.vwf
+set_global_assignment -name BDF_FILE Mux4X1.bdf
+set_global_assignment -name BDF_FILE Multiplicador.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform21.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform22.vwf
+set_global_assignment -name BDF_FILE Registrador1B2C.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform23.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform24.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform25.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform26.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform27.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform28.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform29.vwf
+set_global_assignment -name BDF_FILE Registrador16BdP.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform30.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform31.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform32.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform33.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform34.vwf
+set_global_assignment -name BDF_FILE BlocodControle.bdf
+set_global_assignment -name BDF_FILE ContadorI.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform35.vwf
+set_global_assignment -name BDF_FILE ContadorIComp.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform36.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform37.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform38.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform39.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform40.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform41.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform42.vwf
+set_global_assignment -name BDF_FILE Deslocador4B.bdf
+set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform43.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform44.vwf
+set_global_assignment -name BDF_FILE MultiplicadorF.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform45.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform46.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform47.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform48.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform49.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform50.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform51.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform52.vwf
+set_global_assignment -name BDF_FILE Block2.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform53.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform54.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform55.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform56.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform57.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform58.vwf
+set_global_assignment -name BDF_FILE Rascunho.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform59.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform60.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform62.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform63.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform64.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform65.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform66.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform67.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform68.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform69.vwf
+set_global_assignment -name BDF_FILE Registrador16BdA.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform70.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform71.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform72.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform73.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform74.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform75.vwf
+set_global_assignment -name BDF_FILE BlocodOperacoes.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform76.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform77.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform78.vwf
+set_location_assignment PIN_AF14 -to CLOCK
+set_location_assignment PIN_AA14 -to CMC
+set_location_assignment PIN_AB12 -to A0
+set_location_assignment PIN_AC12 -to A1
+set_location_assignment PIN_AF9 -to A2
+set_location_assignment PIN_AF10 -to A3
+set_location_assignment PIN_AD11 -to A4
+set_location_assignment PIN_AD12 -to B0
+set_location_assignment PIN_AE11 -to B1
+set_location_assignment PIN_AC9 -to B2
+set_location_assignment PIN_AD10 -to B3
+set_location_assignment PIN_AE12 -to B4
+set_location_assignment PIN_V16 -to P0
+set_location_assignment PIN_W16 -to P1
+set_location_assignment PIN_V17 -to P2
+set_location_assignment PIN_V18 -to P3
+set_location_assignment PIN_W17 -to P4
+set_location_assignment PIN_W19 -to P5
+set_location_assignment PIN_Y19 -to P6
+set_location_assignment PIN_W20 -to P7
+set_location_assignment PIN_W21 -to P8
+set_location_assignment PIN_Y21 -to P9
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform79.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform80.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
